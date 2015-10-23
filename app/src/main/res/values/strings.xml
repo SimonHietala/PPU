@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PPU</string>
+    <string name="add_button">Add</string>
+    <string name="product">Product</string>
+    <string name="price">Price</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_message">Do you really want to delete this item?</string>
+    <string name="dialog_title">Delete</string>
+</resources>
