@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity
     private RowAdapter adapter;
 
     public static final String PREFS_NAME = "PPU";
-    private JSONArray jsonArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -41,6 +40,9 @@ public class MainActivity extends AppCompatActivity
         adapter = new RowAdapter(usages, this);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
+
+
     }
 
     @Override

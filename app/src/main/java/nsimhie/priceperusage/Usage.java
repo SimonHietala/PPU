@@ -45,8 +45,8 @@ public class Usage
         return uses;
     }
 
-    public double getPPU(){
-        return Double.parseDouble(String.format("%.2f",price/((double) uses)));
+    public String getPPU(){
+        return String.format("%.2f",price/((double) uses));
     }
 
     @Override

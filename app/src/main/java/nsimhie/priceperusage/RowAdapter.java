@@ -61,7 +61,7 @@ public class RowAdapter extends BaseAdapter
         name.setText(usages.get(position).getName());
         price.setText(Double.toString(usages.get(position).getPrice()));
         uses.setText(Integer.toString(usages.get(position).getUses()));
-        PPU.setText(Double.toString(usages.get(position).getPPU()));
+        PPU.setText(usages.get(position).getPPU());
 
         Button minusBtn = (Button)view.findViewById(R.id.minusBtn);
         Button plusBtn = (Button)view.findViewById(R.id.plusBtn);

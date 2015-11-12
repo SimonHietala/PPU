@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
 
     <TextView
         android:layout_width="wrap_content"
@@ -9,8 +10,8 @@
         android:text="Name: "
         android:id="@+id/nameTag"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/plusBtn"
-        android:layout_toEndOf="@+id/plusBtn" />
+        android:layout_toRightOf="@+id/delBtn"
+        android:layout_toEndOf="@+id/delBtn" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +74,7 @@
         android:layout_height="wrap_content"
         android:text="1"
         android:id="@+id/name"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/price"
         android:layout_alignLeft="@+id/price"
         android:layout_alignStart="@+id/price" />
 
@@ -83,9 +84,9 @@
         android:layout_height="wrap_content"
         android:text="+1"
         android:id="@+id/plusBtn"
-        android:layout_above="@+id/usesTag"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/minusBtn"
+        android:layout_alignStart="@+id/minusBtn" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -93,22 +94,19 @@
         android:layout_height="wrap_content"
         android:text="-1"
         android:id="@+id/minusBtn"
-        android:layout_below="@+id/priceTag"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/PPUTag" />
+        android:layout_below="@+id/price"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_alignTop="@+id/price"
-        android:layout_toRightOf="@+id/price"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
+        android:text="Del"
         android:id="@+id/delBtn"
         android:textAllCaps="false"
-        android:layout_above="@+id/PPU" />
+        android:layout_above="@+id/PPUTag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
